@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <div class="score-board">
+        <div class="badge" id="user-label">user</div>
+        <div class="badge" id="comp-label">comp</div>
+        <div class="badge" id="target-label">target :<span id="target">10</span></div>
+        <span id="user-score">0</span> :
+        <span id="comp-score">0</span>
+    </div>
+
+    <div class="result">
+        <p>Can u defeat the Almighty Computer  <img src="computer.gif" width="30px" height="30px"> ???</p>
+        <p class = "one">First to get <span id="target1">10</span> points wins</p>
+        <p class="one">You can set your own target <button id="btn1">Here</button></p>
+       
+        <p id="greet">Paper > Rock > Scissors > Paper.</p>
+        
+    </div>
+
+    <div class="choices">
+        <div class="choice" id="r">
+            <img src="rock.png" alt="rock-hand-sign">
+        </div>
+        <div class="choice" id="p">
+            <img src="paper.png" alt="paper-hand-sign">
+        </div>
+        <div class="choice" id="s">
+            <img src="scissor.png" alt="scissors-hand-sign">
+        </div>
+
+    </div>
+     <p id="action-message">Make your move.</p>
+    <div class="btn"><button id="reset">Play Again</button></div> 
+    <footer id="footer">Developed by Vasanth Kumar</footer>
+     <script src="script.js" charset="utf-8"></script>
+</body>
+</html>

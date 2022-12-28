@@ -1,0 +1,64 @@
+body{
+    background: url("https://images.unsplash.com/photo-1636633762833-5d1658f1e29b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1339&q=80");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion{
+    width: 65%;
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 30px;
+}
+
+.acc-titile{
+    margin-bottom: 2em;
+    text-align: center;
+
+}
+
+.accordion .content-container .question{
+    padding: 1em 0em;
+    font-size: 1.2rem;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+.accordion .content-container .question::after{
+    content: '+';
+    position: absolute;
+    right: -5px;
+
+}
+
+.accordion .content-container .answer{
+    padding-top: 1em;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+
+.accordion .content-container.active .answer{
+    height: 150px;
+}
+
+.accordion .content-container.active .question{
+    font-size:  1rem;
+    transition: .5s;
+}
+
+.accordion .content-container.active .question::after{
+    content: '-';
+    font-size: 1.2em;
+    transition: .5s;
+}

@@ -1,0 +1,55 @@
+body{
+    background: linear-gradient(90deg, aqua, rgb(47, 163, 163), rgb(80, 160, 216) );
+}
+
+#main-heading{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.boxes{
+    border: 1px solid white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.hidden-content{
+    display: none;
+}
+
+.reveal-btn{
+    display: block;
+}
+
+
+.div2{
+    border:2px solid white;
+    margin-top: 5%;
+    padding: 1em;
+    text-align: center;
+}
+
+.div1{
+    border: 2px solid white;
+    padding: 1em;
+}
+
+.eventdelegation{
+    margin: 5%;
+    border: 5px solid white;
+}
+
+#sports{
+    text-align: center;
+    list-style: none;
+}
+
+li{
+    border: 1px solid white;
+    padding: 10px 3px;
+    margin: 3px;
+}

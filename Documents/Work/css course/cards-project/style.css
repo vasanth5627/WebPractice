@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500;700&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Roboto+Mono:ital@1&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+  --BGCOLOR:#475569;
+
+}
+img{
+    display: block;
+    max-width: 100%;
+    height:auto;
+}
+
+body{
+    font:1.5rem "Nunito",sans-serif;
+    background: var(--BGCOLOR);
+    background-image: radial-gradient(whitesmoke,#475569);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.nowrap{
+    white-space: nowrap;
+}
+
+/* header, nav, main, footer{
+    display:grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+} */
+
+header,footer{
+    position:sticky;
+    background-color: #1e293b;
+    color:whitesmoke;
+    text-align: center;
+  }
+
+  main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.5rem;
+    padding: 1rem;;
+  }
+  
+  nav{
+    background-color:white;
+    padding:0.5rem;
+    border-bottom: 2px solid black;
+    font-weight:bold;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  nav a, nav a :visited{
+        color: black;
+  }
+
+  nav :is(a:hover, a:focus){
+        color:hsla(0, 0%, 20%, 0.6);
+  }
+  nav a:active{
+    color: red;
+  }
+  
+  header{
+    top:0;
+  }
+
+  footer{
+    bottom:0;
+  }
+
+  .card{
+    scroll-margin-top:8rem;
+    width: min(100%, 350px);
+    background-color: #cbd5e1;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card figure{
+    display: flex;
+    flex-flow:column nowrap;
+
+  }
+
+  .card img{
+    border: 5px double #333;
+    border-radius: 50%;
+  } 
+
+  .card img[alt]{
+    border: 2px solid blanchedalmond;
+  }
+  .card img:not([alt]){
+    border: 10px solid red;
+  }
+  .card figcaption{
+    font-weight: bolder;
+    font-size:2rem;
+    margin:1rem;
+    text-align:center;
+  }
+
+  .card:target{
+    border: 2px solid rebeccapurple;
+  }
+
+  .card:nth-child(2){
+    background-color: papayawhip;
+  }
+
+@media screen and (min-width:576px){
+   main{
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 1rem;
+   }
+
+   .card{
+    width: min(100%, 400px);
+   }
+    .card:last-child{
+        order: -1;
+    }
+
+  
+  }
+  
+  
+  @media screen and (min-width:768px){
+   nav{
+    display: none;
+   }
+  .card{
+    width: min(100%,325px);
+  }
+  .card figure{
+    flex-flow: column-reverse;
+  }
+
+  .card figcaption{
+    margin: 0.1em 0;
+
+  }
+
+  .card p {
+    margin-top: 1rem;
+  }
+  }
+    @media screen and (min-width:992px){
+     .card{
+        width: min(100% 400px);
+     }
+     .card:nth-child(2){
+        order: -1;
+     }
+    
+        
+    }
+    @media screen and (min-width:1200px){
+        .card{
+           width: min(calc(33% - 1rem), 500px);
+        }
+        .card:nth-child(2){
+           order: -1;
+        }
+       
+           
+       }
+
+
+       @media screen and (max-height:425px) and (min-aspect-ratio:7/4){
+        h1{
+            font-size:1.5rem;
+        }
+       nav{
+        display: none;
+       }
+         main{
+            flex-flow:row nowrap;
+            justify-content: space-evenly;
+            align-items:stretch;
+         }
+
+         .card{
+            width:min(calc(33%-0.25rem),200px);
+
+         }
+
+         .card figcaption, .card p{
+            font-size:1.5rem;
+         }
+      }
+
+
+      @media (prefers-color-schme: dark){
+        body{
+          background-color: red;
+        }
+      }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <!-- form for crud operations -->
+                <form action="" autocomplete="on" onsubmit="event.preventDefault();return validateForm()" name="myform" id="form">
+                    <div id="name1">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required placeholder="Enter your name"><span class="formerror"></span>
+                    </div>
+
+                    <div id="emailid">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required placeholder="Enter your email id"><span class="formerror"></span>
+                    </div>
+
+                    <div id="passid">
+                        <label for="pass">Set Password</label>
+                        <input type="password" name="password" id="pass" required placeholder="Set a password"><span class="formerror"></span>
+                    </div>
+
+                    <div id="cpassid">
+                        <label for="cpass">Confirm Password</label>
+                        <input type="password" name="cpass" id="cpass" required placeholder="Confirm your password"><span class="formerror"></span>
+                    </div>
+
+                    <div id="btn" class="button">
+                        <input type="submit" value="Create">
+                    </div>
+                    
+                </form>
+            </td>
+            <td>
+                <!-- table to list all the records -->
+                <table class="list" id="employee-list">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+   </table> 
+   <script src="script.js"></script>
+</body>
+</html>

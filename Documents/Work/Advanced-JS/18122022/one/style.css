@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    text-align: center;
+}
+
+#heading{
+    margin: 20px 0;
+}
+
+#countryInput{
+    height: 30px;
+    width: 300px;
+    outline: none;
+    padding: 10px;
+}
+
+#stateInput{
+    margin: 10px 0;
+    height: 30px;
+    width: 300px;
+    outline: none;
+    padding: 10px;
+}
+
+#searchBtn{
+    padding: 8px 16px;
+    background-color: #4197eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.card{
+    width: 230px;
+    text-align: start;
+}
+
+.cards{
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    column-gap: 60px;
+}
+
+.card p{
+    margin: 10px 0;
+}

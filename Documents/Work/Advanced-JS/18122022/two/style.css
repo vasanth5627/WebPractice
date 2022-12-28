@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    border: 1px solid black;
+    width: 450px;
+    padding: 10px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.btn button{
+    
+    background-color:  #017cff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.button{
+    border: 1px solid #017cff;
+    margin: 10px 0;
+    padding: 8px;
+    text-align: start;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: #017cff;
+    color: white;
+}
+
+.select{
+    border: 1px solid #017cff;
+    margin: 10px 0;
+    padding: 8px;
+    text-align: start;
+    background-color: white;
+    border-radius: 5px;
+}

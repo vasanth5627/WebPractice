@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color:#cacaca;
+    padding: 10px;
+    margin: 50px;
+    display: flex;
+    /*  flex-direction: (column, row-reverse , column-reverse) */
+    flex-direction: row;
+    /* justify-content: (center, space-around, space-between, space-evenly, right,left,flex-start,flex-end); aligns items on main 
+    axis which is the flex direction*/
+    justify-content: center;
+    /* align-items: normal stretch center start  end flex-end flex-start baseline;  aligns items on perpendicular axis to main 
+    axis which is flex direction*/
+    align-items: center;
+
+    
+
+}
+.item{
+    background-color: #ff0037;
+    color: white;
+    font-size: 35px;
+    padding: 25px;
+    margin: 10px;
+    flex: 1;
+
+
+}
+.items-3{
+    /* used to demo stretch in align items */
+    /* height: 150px; */
+}
+
+.items-4{
+    /* used to demo baseliene in align items */
+    /* font-size: 70px; */
+    /* align-self: flex-start;  algn-self is same as align item and it will override the allign-item method
+    we use align-self to target individual items only*/
+
+
+}
+
+/* oder items are used to change the postion of flex items within the flex container. */
+
+.items-1{
+   order: 3;
+   
+}
+
+.items-2{
+    order: 4;
+}
+
+.items-3{
+    order: 0;
+}
+
+.items-4{
+    /* flex-grow: 3; */
+    order: 1;
+    flex-basis: 75%;
+    flex-shrink: 0;
+}
+
+.items-5{
+    order: 2;
+}
+/* flex comes with 3 values flex: flex-grow|flex-shirnk(only 2 properties 1 and 0(the item will not shrink)|flex-basis(sets width of flex item which is same as width)
+flex-wrap helps us to stop overflowing of flex items out of container. flex-warp: no-wrap(default), wrap.
+align-content aligns the rows in the contaier (property same as align items). it deals with content inside of container which is 
+collection of all the items in the contaienr.*/
+
+/* !imprtant actually overrirdes everything else  whith the element and it has highest precedence*/
+
+
+
+

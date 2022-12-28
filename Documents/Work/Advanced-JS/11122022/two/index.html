@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Crud Operations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <table>
+        <tr>
+            <td>
+                <!-- form for crud operations -->
+                <form action="" autocomplete="on" onsubmit="event.preventDefault(); onFormSubmit();">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+
+                    <div>
+                        <label for="code">EMP Code</label>
+                        <input type="number" name="code" id="code">
+                    </div>
+
+                    <div>
+                        <label for="salary">Salary:</label>
+                        <input type="number" name="salary" id="salary">
+                    </div>
+
+                    <div>
+                        <label for="city">City:</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+
+                    <div id="btn" class="button">
+                        <input type="submit" value="Submit">
+                    </div>
+                    
+                </form>
+            </td>
+            <td>
+                <!-- table to list all the records -->
+                <table class="list" id="employee-list">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>EMP Code</th>
+                            <th>Salary</th>
+                            <th>City</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+   </table> 
+   <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500;700&family=Cedarville+Cursive&family=Exo:wght@300;400;500;700;800&family=Inter:wght@300;400;700;800&family=Lora:wght@400;500;700&family=Marck+Script&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,700&family=Roboto+Mono:ital@1&family=Roboto:wght@100;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    
+    
+    
+}
+body{
+    
+  /* background:  linear-gradient(-45deg, rgba(2,0,36,1) 0%, rgba(9,53,121,1) 0%, rgba(0,212,255,1) 100%); */
+  background:  linear-gradient(-45deg, rgb(86, 83, 172), rgba(9,53,121,1), rgba(0,212,255,1));
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  min-height: 100vh;
+  
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.header{
+    font-family: 'Cedarville Cursive', cursive, sans-serif;
+    width: 100%;
+    text-align: center;
+    padding: .5rem;
+    border-bottom: 1px solid black;
+    margin-bottom: 5%;
+    
+}
+.header p{
+    font-size: 3rem;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.47), 0 0 20px rgb(83, 77, 191), 0 0 30px #3669b0, 0 0 40px #477fe1, 0 0 50px #3c6bbc, 0 0 60px #6d92d2, 0 0 70px #3880f4;
+    }
+    to {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.489), 0 0 30px #4c50cc, 0 0 40px #6c6ade, 0 0 50px #3f52e1, 0 0 60px #3b49e5, 0 0 70px #4b44d8, 0 0 80px #072e92;
+    }   
+  }
+
+.button{
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.button button{
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: cornsilk;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    box-shadow:5px 5px 5px #888888;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.content{
+    margin: 0 auto;
+    font-family: 'Marck Script', cursive;
+    width: 90%;
+    /* height: 100vh; */
+    
+    
+}
+
+.card{
+    margin-bottom: 3em;
+    border: 1px solid black;
+    padding: 8em;
+    text-align: center;
+    border-radius: 10px;
+    font-size: .5rem;
+    font-family: 'Marck Script', cursive;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    
+    
+}
+
+.cbtn{
+    font-size: .2rem;
+    width: 90%;
+    font-style: 'Marck Script', cursive;
+    text-align: center;
+}
+
+
+.card .cbtn blockquote q{
+    font-size: 1.5rem;
+    word-wrap: wrap;   
+    text-align: center;
+}
+
+.card:hover, .card:active{
+    margin-bottom: 3em;
+    border: 1px solid black;
+    padding: 8em;
+    text-align: center;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px 8px 2px #888888;
+    cursor: pointer;
+    transform: scale(1.05);
+    
+}
+
+ 
+
+.cbtn:hover, .cbtn:active{
+    margin-bottom: 3em;
+    border: 1px solid black;
+    padding: 8em;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white ;
+    color: black;
+    box-shadow: 10px 10px 8px 2px #888888;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.header p:hover{
+    
+    color: red;
+    transform: scale(1.05);
+}
+header p:active{
+    
+    color: red;
+    transform: scale(1.05);
+}
+
+.footer{
+    text-align: center;
+    background-color: black;
+    padding: .5em;
+    /* position: fixed;
+    bottom: 0px;
+    width: 100%; */
+    
+
+   
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+    
+}

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500;700&family=Cedarville+Cursive&family=Exo:wght@300;400;500;700;800&family=Inter:wght@300;400;700;800&family=Lora:wght@400;500;700&family=Marck+Script&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Orbitron:wght@400;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,700&family=Roboto+Mono:ital@1&family=Roboto:wght@100;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: white;
+    text-align: center;
+    background: url("pattern.png");
+    height: 100vh;
+}
+
+.main{
+    background-color: #ccc;
+    min-width: 200px;
+    width: 300px;
+    height: 20vh;
+    margin: 100px auto;
+    word-wrap: wrap;
+    position:  relative;
+    padding: 1.5em;
+    border: 1px solid black;
+
+}
+
+
+
+.badge{
+    background-color: #e66357;
+    width: fit-content;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: .5em;
+    position: absolute;
+    left: 35%;
+    right:-55%;
+    top:-15%
+
+}
+
+
+
+.clock{
+    background-color: #ebebeb;
+    text-align: center;
+    font-size: 2em;
+    height: 100%;
+    padding-top: 20px;
+    font-family: 'Orbitron',sans-serif;
+    border-radius: 5px;
+    
+}
+
+.col{
+    color: red;
+}
+
+@media (min-width:450px){
+    .main{
+        width: 400px;
+
+    }
+
+    .badge{
+        position: absolute;
+        left: 40%;
+        right:-60%;
+        top:-15%
+    }
+    .clock{
+        font-size: 3em;
+        height: 100%;
+        padding-top: 15px;
+       
+    }
+    
+}
+

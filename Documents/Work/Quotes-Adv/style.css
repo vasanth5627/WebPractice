@@ -1,0 +1,290 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500;700&family=Cedarville+Cursive&family=Exo:wght@300;400;500;700;800&family=Inter:wght@300;400;700;800&family=Lora:wght@400;500;700&family=Marck+Script&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,700&family=Roboto+Mono:ital@1&family=Roboto:wght@100;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) ,url(atbg.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.textbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header p{
+    text-align: center;
+    color: white;
+    font-family: 'Marck Script', cursive;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.textbox a{
+    position: absolute;
+    bottom: 10px;
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.textbox p::after{
+    content: '';
+    background:red;
+    display: block;
+    width: 0%;
+    height: 1px;
+    transition: 0.5s;
+}
+
+.textbox p:hover:after{
+    content: '';
+    background:red;
+    display: block;
+    width: 100%;
+    height: 1px;
+    transition: 1s;
+   
+}
+
+.textbox p:hover{
+    transition: 1s;
+    transform: scale(1.5);
+}
+
+.textbox a:hover{
+    background-color: black;
+    color: white;
+}
+
+.content{
+    text-align: center;
+    background: url("pattern.png");
+    background-size: repeat-y;
+    background-position: center;
+    
+}
+
+.button button{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: white;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    cursor: pointer;
+}
+.button button:hover{
+    transform: scale(1.1);
+}
+
+  .quotes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .box {
+    text-align: center;
+    background-color: transparent;
+    border-radius: 3px;
+    color: #fff;
+    margin-top: 10%;
+    width: 30%;
+    height: 300px;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+    transition: 0.4s;
+    text-align: center;
+  }
+  .box:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-top: 20px solid #fff;
+    border-left: 20px solid #fff;
+    box-sizing: border-box;
+  }
+  .box:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 20px solid #fff;
+    border-right: 20px solid #fff;
+    box-sizing: border-box;
+  }
+  .box .fas {
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px !important;
+    background-color: #fff;
+    color: #2c3a47;
+  }
+  .box .fa2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .box .text {
+    position: absolute;
+    top: 30px;
+    left: -30px;
+    width: calc(100% + 3rem);
+    height: calc(100% - 4rem);
+    background-color: #2c3a47;
+    border-radius: 3px;
+    font-family: 'Marck Script', cursive;
+    transition: 0.4s;
+  }
+  .box .text .fa1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .box .text div {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+    padding: 3% 20%;
+    line-height: 1.5;
+    box-sizing: border-box;
+  }
+  
+  .box .text div p {
+    font-size: 1rem;
+  }
+  .box:hover {
+    transform: rotateY(-20deg) skewY(3deg);
+  }
+  .box:hover .text {
+    transform: rotateY(20deg) skewY(-3deg);
+  }
+
+  .quotes:last-child{
+    padding-bottom: 10%;
+  }
+
+  .card p{
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer{
+    text-align: center;
+    background-color: black;
+    padding: .5em;
+  }
+
+  .footer a{
+    color: white;
+  }
+
+
+@media (max-width:700px){
+    .box:before {
+        display: none;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -30px;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border-top: 10px solid #fff;
+        border-left: 10px solid #fff;
+        box-sizing: border-box;
+      }
+      .box:after {
+        display: none;
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: 80px;
+        width: 100%;
+        height: 100%;
+        border-bottom: 10px solid #fff;
+        border-right: 10px solid #fff;
+        box-sizing: border-box;
+      }
+      .box .fas {
+        font-size: 15px;
+        height: 20px;
+        width: 20px;
+        line-height: 10px !important;
+        background-color: #fff;
+        color: #2c3a47;
+      }
+      .box .fa2 {
+        position: absolute;
+        bottom:5px;
+        right: -65px;
+        border-bottom-right-radius: 10px;
+      }
+    
+      .box .text {
+        position: relative;
+        top: 30px;
+        left: -30px;
+        width: calc(100% + 6rem);
+        height: calc(100% - 2rem);
+        background-color: #2c3a47;
+        border-radius: 3px;
+        font-family: 'Marck Script', cursive;
+        text-align: center;
+        overflow: scroll;
+        border-radius: 10px;
+        
+      }
+      .box .text .fa1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      /* .box .text div {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        padding: 3% 20%;
+        line-height: 1.5;
+        box-sizing: border-box;
+      } */
+      
+}
