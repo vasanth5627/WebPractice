@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    flex-direction: column;
+    
+    
+}
+
+input{
+    display: block;
+    margin: 5px;
+  
+}
+
+div{
+    margin-top: 5%;
+}

@@ -125,33 +125,33 @@ console.log(myUsers.userList)
     
 // }
 
-const getALlUserEmails = async ()=>{
-    const response = await fetch("https://jsonplaceholder.typicode.com/users");
-    const Userdata = await response.json();
-    const UserEmails = Userdata.map(user=> {
-        return user.email;
-    })
+// const getALlUserEmails = async ()=>{
+//     const response = await fetch("https://jsonplaceholder.typicode.com/users");
+//     const Userdata = await response.json();
+//     const UserEmails = Userdata.map(user=> {
+//         return user.email;
+//     })
 
-    // console.log(UserEmails);
-    postToWebPage(UserEmails)
-}
-getALlUserEmails();
-const postToWebPage = (data)=>{
-    console.log(data);
-}
+//     // console.log(UserEmails);
+//     postToWebPage(UserEmails)
+// }
+// getALlUserEmails();
+// const postToWebPage = (data)=>{
+//     console.log(data);
+// }
 
 
 
-const getDadJoke = async () =>{
-    const response = await fetch("https://icanhazdadjoke.com",{
-        method:"GET",
-        headers:{
-            Accept:"Application/json"
-        }
-    });
-    const jsonJokeData  =  await response.json()
-    console.log(jsonJokeData);
-}
+// const getDadJoke = async () =>{
+//     const response = await fetch("https://icanhazdadjoke.com",{
+//         method:"GET",
+//         headers:{
+//             Accept:"Application/json"
+//         }
+//     });
+//     const jsonJokeData  =  await response.json()
+//     console.log(jsonJokeData);
+// }
 
 // const getDadJoke = async () =>{
 //     const response = await fetch("https://icanhazdadjoke.com",{
@@ -163,7 +163,7 @@ const getDadJoke = async () =>{
 //     const textJokeData  =  await response.text()
 //     console.log(textJokeData);
 // }
-getDadJoke();
+// getDadJoke();
 
 
 // const jokeObj = {
@@ -183,5 +183,13 @@ getDadJoke();
 //      console.log(jsonResponse);
 // }
 
-postData(jokeObj);
+// postData(jokeObj);
 
+const requestJoke = async (firstName, lastName) =>{
+    const response = await fetch(`http://api.icndb.com/jokes/random?firstName=${firstName}&lastName=${lastName}&limitTo=[nerdy]`);
+    const jsonResponse = await response.json();
+    console.log(jsonResponse);
+
+}
+
+requestJoke("Clint","Eastwood");

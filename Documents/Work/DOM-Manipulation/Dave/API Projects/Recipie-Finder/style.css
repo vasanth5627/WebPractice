@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500;700&family=Cedarville+Cursive&family=Exo:wght@300;400;500;700;800&family=Inter:wght@300;400;700;800&family=Lato:wght@300;400&family=Lora:wght@400;500;700&family=Marck+Script&family=Montserrat:wght@100;300;400;500&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Orbitron:wght@400;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,700&family=Roboto+Mono:ital@1&family=Roboto:wght@100;400;500;700&family=Rock+Salt&display=swap');
+
+/*Global variables*/
+
+:root{
+    --light-color:#fff;
+    --dark-color:#282828;
+    --header-height:70px;
+    --search-height:50px;
+    --border-color:#ccc;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: var(--light-color);
+    overflow: hidden;
+    overflow-y: auto;
+    /* border: 5px red solid; */
+    
+}
+
+.container{
+    text-align: center;
+    height: calc(100vh - var(--header-height));
+    /* border: 5px green solid; */
+    
+    
+}
+
+header{
+    height: var(--header-height);
+    background: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--light-color);
+    gap: 10px;
+    padding-right: 30px;
+   
+}
+
+header img{
+    filter: invert(1);
+    
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--search-height);
+}
+
+.search input[type="text"]{
+    padding: 8px 10px;
+    line-height: 1.5;
+    font-size: 1rem;
+    border: none;
+    border: 1px solid var(--border-color);
+    border-bottom: 1px solid transparent;
+    outline: none;
+    transition: all 200ms ease-in-out;
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: 0px 2px 8px 0px var(--border-color);
+}
+
+.search input[type="text"]:focus{
+    border-left-color: transparent;
+    border-bottom-color: var(--border-color);
+    border-radius: 0;
+    width: 61%;
+}
+
+.btn{
+    padding: 8px 10px;
+    background: transparent;
+    border-radius: 5px; 
+    font-size: 1rem;
+    cursor: pointer; 
+    border: 1px solid #007bff;
+    user-select: none; /*selects the content*/
+    margin-left: 10px;
+}
+
+.btn:hover{
+    background-color: #007bff;
+    border-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+#recipie-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+     flex-wrap: wrap;
+    height: calc(100vh - (var(--header-height) + var(--search-height) + 20px));
+
+    overflow: hidden;
+    overflow-y: auto;
+    
+}
+
+.recipie{
+    height: 300px;
+    width: 300px;
+    padding: 4px;
+    box-shadow: 0px 0px 8px 2px var(--border-color);
+    margin: 20px;
+    transition: all 200ms ease-in-out;
+    font-family: 'Nunito',sans-serif;
+    border-radius: 8px 8px 0px 0px;
+   
+}
+
+.recipie-title{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.recipie-image{
+    height: 210px;
+
+}
+.recipie-image img{
+    height: 100%;
+    width: 100%;
+
+}
+.recipie-text{
+    height: 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+    background: #ccc;
+    margin-top: 20px;
+    overflow: hidden;
+    overflow-y: auto;
+    transform: scale(.8);
+    transform-origin: top left;
+}
+
+.recipie-text ul {
+    list-style: circle;
+    list-style-position: inside;
+    text-align: left;
+    padding: 5px;
+
+}
+.recipie-text ul>li{
+    padding: 5px;
+
+}
+
+.recipie:hover .recipie-text{
+    height: 120px;
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+.recipie:hover{
+    height: 420px;
+
+}
+
+::selection{ /*when we select any item */
+    color: var(--light-color);
+    background-color: rgb(80, 184, 80);
+}
+
+#loading{
+    background: url('foodgif.webp') no-repeat center center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    z-index: 999;
+    
+    
+}
+.hide{
+    display: none !important;
+}
+

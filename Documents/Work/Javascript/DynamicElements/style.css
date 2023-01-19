@@ -1,0 +1,15 @@
+body{
+    background-color: #003333;
+}
+.customer{
+    color: red;
+    background-color: yellow;
+    text-align: center;
+    padding: 10px;
+}
+
+.test{
+    border: 2px solid red;
+    margin: 10px;
+    border-radius: 10px;
+}
