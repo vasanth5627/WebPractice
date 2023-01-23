@@ -32,3 +32,12 @@ body{
     margin: 10px;
     border-radius: 10px;
 }
+
+.btn{
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    
+}

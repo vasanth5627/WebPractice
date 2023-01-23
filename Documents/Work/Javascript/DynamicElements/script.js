@@ -28,6 +28,13 @@ const renderCustomers = function(value,index){
     const custEle = document.createElement('div');
     custEle.textContent = value;
     ele.append(custEle);
+    const btn = document.createElement('button');
+    btn.textContent = 'Submit';
+    custEle.append(btn);
+    btn.classList.add('btn');
+    btn.addEventListener('click',()=>{
+        alert(value)
+    })
     custEle.classList.add('customer','test');
      setTimeout(render,2000,custEle)
    
