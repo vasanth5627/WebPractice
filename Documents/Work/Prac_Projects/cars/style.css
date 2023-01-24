@@ -1,0 +1,46 @@
+.container{
+    margin-top: 30px;
+    margin-left: 10px;
+    display: flex;
+   
+}
+.sedan{
+    background-color: orange;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.suvs{
+    background-color: teal;
+    padding: 20px;
+}
+.luxury{
+    background-color: rgb(100, 122, 154);
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+h1{
+    color:white;
+    font-family: sans-serif;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-top: 150px;
+    font-size: 50px;
+}
+
+.con{
+    color: rgba(255, 255, 255, 0.728);
+    font-family: sans-serif;
+    padding: 20px 60px 60px 30px;
+    font-weight: bold;
+}
+
+button{
+    margin-left: 30px;
+    padding: 15px 20px;
+    border: none;
+    border-radius:20px;
+    margin-bottom: 30px;
+    
+}

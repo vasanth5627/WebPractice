@@ -1,0 +1,71 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.bar{
+    display: flex;
+    background: #2874f0;
+    padding-left: 300px;
+
+}
+input{
+    width: 350px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 2px;
+    outline: 0 !important;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.search{
+    position: relative;
+}
+.search i{
+    position: absolute;
+    color:blue;
+   top:20px;
+   right: 15px;
+}
+
+.btn button{
+    margin: 18px 20px;
+    padding: 5px 20px;
+    background-color: white;
+    color: blue;
+    border: none;
+    box-shadow: 1px 1px 2px 1px white;
+    font-weight: bold;
+}
+.img{
+    margin: 10px;
+}
+.seller{
+    margin: 20px 15px;
+    color: white;
+    font-weight: medium ;
+    font-family: sans-serif;
+}
+
+.more{
+    margin: 20px 15px;
+    color: white;
+    font-weight: medium ;
+    font-family: sans-serif;
+}
+
+.cart{
+    margin: 20px 15px;
+    color: white;
+    font-weight: medium ;
+    font-family: sans-serif;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+.catergories img{
+    width: 1450px;
+    height: 130px;
+    border: none;
+}

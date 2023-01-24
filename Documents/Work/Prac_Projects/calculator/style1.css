@@ -1,0 +1,47 @@
+.container{
+    text-align: center;
+    background-color: blue;
+    width: 500px;
+    height: 400px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    
+    
+    
+}
+.calc{
+    background-color: pink;
+    width: 400px;
+    height: 300px;
+    margin-left: 50px;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 8px #888888;
+    padding: 0;
+}
+
+input{
+    background-color: blue;
+    width: 280px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    
+}
+
+button{
+    padding: 10px 25px;
+    box-shadow: 5px 10px 8px rgb(125, 125, 20);
+    background-color: rgb(93, 93, 226);
+    color: black;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.op{
+    background-color: yellow;
+}
+#equal{
+    background-color: green;
+}

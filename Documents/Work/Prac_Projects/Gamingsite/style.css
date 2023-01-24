@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: #94D3A2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.sidebar{
+    background-color: #b4d4b6d8;
+     width: 300px;
+     height: 1000px;
+     border-radius: 20px;
+}
+
+.sidebar img{
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    
+}
+.con{
+    padding: 70px;
+}
+
+#name{
+    color: rgba(41, 38, 38, 0.46);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 40px;
+    display: inline-block;
+    padding: 3px;
+    
+}
+
+#tag{
+    color: rgba(41, 38, 38, 0.46);
+    font-size: 15px;
+    display: block;
+    margin-top: 10px;
+
+}
+.cat{
+    color: rgba(41, 38, 38, 0.46);
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 25px;
+    display: block;
+    margin: 20px 0px 20px  0px;
+    padding-top:30px;
+  
+}
+i{
+   margin-left: 3px;
+}
+
+.card{
+    width: 200px;
+    height: 100px;
+    background-color: #94D3A2;
+    text-align: left;
+    padding: 10px;
+    padding-right: 15px;
+    margin: 20px;
+    font-size: 25px;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+
+    
+}
+.card img{
+    margin-left:5px;    
+    float: right;
+}
+.game-img{
+  width: 1px;
+  margin-top: 20PX;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+.main-card{
+     background-color: #b4d4b6d8;
+     width: 900px;
+     height: 150px;
+     display: flex;
+     margin-left: 100px;
+     border-radius: 10px;
+}
+
+h2{
+   margin-top:120px;
+   padding-left: 50px;
+   text-decoration: none;
+   color:  rgba(41, 38, 38, 0.46);
+   font-family: sans-serif;
+   font-size: 40px;
+   margin-left: 50px;
+ 
+}
+#u{
+    margin-top: 5px;
+    border-bottom: 25px solid white;
+    border-radius: 30px;
+    margin-bottom: 80px;
+    margin-left: 90px;
+    width: 300px;
+}
+.game{
+    margin-top: 30px;
+    
+}
+
+.gname{
+    margin-left: 250px;
+    margin-bottom: 0;
+    color:rgba(41, 38, 38, 0.46);
+    font-size: 30px;
+    padding: 0;
+}
+.per{   
+    margin-left: 300px;
+    margin-top: 50px;
+    color:rgba(41, 38, 38, 0.46);
+    font-size: 30px;
+}
+
+.version{
+    margin-left: 250px;
+    color:rgba(41, 38, 38, 0.46);
+}
+
+.u1{
+    border-bottom: 20px solid #94D3A2;
+    margin-left: 250px;
+    border-radius: 10px;
+    
+    
+}
+

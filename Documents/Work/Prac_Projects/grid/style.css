@@ -1,0 +1,37 @@
+
+span{
+   font-size: 50px;
+  
+
+}
+.main{
+    display: grid;
+    text-align: center;
+    grid-gap: 10px;
+    background-color: black;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+.large{
+    grid-row: span 2;
+    grid-column: span 3;
+    background: linear-gradient(yellow,rgb(197, 14, 197));
+    text-align: center;
+    padding-top: 30px;
+}
+.land{
+    grid-row: span 1;
+    grid-column: span 2;
+    background: linear-gradient(skyblue, blue);
+}
+.normal{
+    background: linear-gradient(yellow, pink);
+    grid-row: span 1;
+    grid-column: span 1;
+}
+.port{
+    grid-row: span 2;
+    grid-column: span 2;
+    background: linear-gradient(yellow,rgb(197, 14, 197));
+    padding-top: 30px;
+}
