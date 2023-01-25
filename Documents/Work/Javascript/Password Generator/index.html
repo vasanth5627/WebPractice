@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <span id="pass-box">Generate Password</span>
+            <div class="row">
+                <div class="left">
+                    Password Length
+                </div>
+                <div class="right">
+                    <input type="number" name="" id="total-char" max="30" min="8" value="8" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    Contains Uppercase
+                </div>
+                <div class="right">
+                    <input type="checkbox" name="upper-case" id="upper-case" checked  />
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    Contains Lowerrcase
+                </div>
+                <div class="right">
+                    <input type="checkbox" name="lower-case" id="lower-case" checked  />
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    Contains Numbers
+                </div>
+                <div class="right">
+                    <input type="checkbox" name="numbers" id="numbers" checked  />
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    Contains Symbols
+                </div>
+                <div class="right">
+                    <input type="checkbox" name="symbols" id="symbols" checked  />
+                </div>
+            </div>
+            <div class="row">
+                <button id="btn">
+                    Generate
+                </button>
+            </div>
+
+        </div>
+        
+    </div>
+    <div class="error"></div>
+
+</body>
+</html>

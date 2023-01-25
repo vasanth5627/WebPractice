@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500;700&family=Cedarville+Cursive&family=Exo:wght@300;400;500;700;800&family=Inter:wght@300;400;700;800&family=Lato:wght@300;400&family=Lora:wght@400;500;700&family=Marck+Script&family=Montserrat:wght@100;300;400;500&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Orbitron:wght@400;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,700&family=Roboto+Mono:ital@1&family=Roboto:wght@100;400;500;700&family=Rock+Salt&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #3498db;
+    font-family: 'Roboto',sans-serif;
+
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box{
+    width: 40%;
+    box-shadow: 0 0 5px grey;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.row{
+    width: 100%;
+    margin: 2rem;
+    margin-left: 0;
+
+}
+
+.btn{
+    background-color: #3498db;
+    width: 100%;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    padding: 5px;
+    cursor: pointer;
+
+}
+.score{
+    display: none;
+    font-family: 'Roboto',sans-serif;
+    font-size: 1rem;
+    background-color: white;
+    padding: 10px 20px;
+}

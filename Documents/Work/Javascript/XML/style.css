@@ -1,0 +1,31 @@
+/* table{
+    border: 1px solid black;
+    margin: 30px auto;
+    
+}
+table th:not(:last-child){
+    border-right: 1px solid black;
+    
+}
+table td:not(:last-child){
+    border-right: 1px solid black;
+    
+} */
+
+table , th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 30px auto;
+    
+}
+
+.btn{
+    text-align: center;
+    
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+}
