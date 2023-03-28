@@ -6,12 +6,11 @@ const form = document.querySelector('form');
 const weather = document.querySelector('#weather');
 const search = document.querySelector('#search');
 
-const getWeather = async (city) =>{
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
-    const response = await fetch(url);
-    const data = await response.json();
-    console.log(data);
-    return showWeather(data);
+
+async function getWeather(city){
+    const respone = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
+    const data = await respone.json();
+    showWeather(data);
 
 }
 
@@ -27,12 +26,14 @@ const showWeather= (data)=>{
             <div>
                 <h2>${data.main.temp} ℃</h2>
                 <h4>${data.weather[0].main}</h4>
+                <h4>${data.name}</h4>
             </div>
     `
 }
 
 form.addEventListener('submit',function(event){
     getWeather(search.value)
+    search.value='';
     event.preventDefault();
 })
 
