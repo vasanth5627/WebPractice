@@ -1,0 +1,34 @@
+[
+      {
+        "title": "Effective JavaScript",
+        "Author": "Vasanth Kumar",
+        "pages": "97",
+        "price": "$21.99",
+        "image": "https://itbook.store/img/books/9780321812186.png",
+        "Genere": "JavaScript"
+      } ,
+      {
+        "title": "Sams Teach Yourself Java in 24 Hours, 6th Edition",
+        "Author": "Suresh Kumar",
+        "pages": "80",
+        "price": "$5.71",
+        "image": "https://itbook.store/img/books/9780672335754.png",
+        "Genere": "Java"
+      },
+      {
+        "title": "Sams Teach Yourself Java in 24 Hours, 8th Edition",
+        "Author": "Aditya Varma",
+        "pages": "149",
+        "price": "$17.79",
+        "image": "https://itbook.store/img/books/9781484234198.png",
+        "Genere": "Java"
+      },
+      {
+        "title": "Learn Java for Web Development",
+        "Author": "Suhail Khan",
+        "pages": "231",
+        "price": "$41.39",
+        "image": "https://itbook.store/img/books/9781430259831.png",
+        "Genere": "Web-Development"
+      }
+]

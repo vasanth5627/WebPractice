@@ -1,0 +1,111 @@
+/* Set box-sizing property for all elements */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Set body styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Center book-details div */
+  #book-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  #book-details:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style book cover image */
+  #book-cover {
+    width: 200px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style book info */
+  #book-info {
+    text-align: center;
+  }
+  
+  h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #666666;
+  }
+  
+  /* Style buttons */
+  #buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: #337ab7;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #23527c;
+    transform: scale(1.05);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  img:hover {
+    transform: perspective(1000px) rotateY(10deg);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 600px) {
+    #book-details {
+      padding: 10px;
+    }
+  
+    #book-cover {
+      width: 150px;
+      height: 225px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+    img:hover {
+        transform: perspective(1000px) rotateY(10deg);
+        transition: transform 0.3s ease-in-out;
+      }
+  }
+  

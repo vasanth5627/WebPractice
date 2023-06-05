@@ -7,6 +7,10 @@ function search(){
    const storeitems = document.querySelector('.product-list'); //has the list of all products
    const product = document.querySelectorAll('.product'); //has each product 
    const pname = storeitems.getElementsByTagName('h2'); // has each product name
+//    console.log(item);
+//    console.log(storeitems);
+//    console.log(product);
+//    console.log(pname);
 
    for(i=0;i<pname.length;i++){
         let match = product[i].getElementsByTagName('h2')[0]; //gets the names of product
