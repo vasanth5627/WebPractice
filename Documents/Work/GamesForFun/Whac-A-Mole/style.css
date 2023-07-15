@@ -1,0 +1,33 @@
+body{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+.grid{
+    height: 306px;
+    width: 306px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square{
+    height: 100px;
+    width: 100px;
+    border: solid black 1px;
+}
+
+.mole{
+    background-image: url(mole.jpg);
+    background-size: cover;
+}
+
+#play-btn{
+    
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+
+}

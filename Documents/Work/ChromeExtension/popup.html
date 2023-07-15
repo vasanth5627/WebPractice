@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>String to JSON</title>
+    <style>
+      body {
+        width: 300px;
+        height: 150px;
+        font-family: Arial, sans-serif;
+        padding: 10px;
+      }
+
+      input {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      button {
+        width: 100%;
+      }
+    </style>
+    <script type = "module" src="popup.js"></script>
+  </head>
+  <body>
+    <h1>String to JSON</h1>
+    <label for="data">Data:</label>
+    <input type="text" id="data" placeholder="Enter the string data" />
+
+    <label for="filename">Filename:</label>
+    <input
+      type="text"
+      id="filename"
+      placeholder="Enter the filename with .json extension"
+    />
+
+    <button id="createBtn">Create JSON File</button>
+  </body>
+</html>

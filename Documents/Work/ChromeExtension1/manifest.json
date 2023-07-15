@@ -1,0 +1,15 @@
+{
+    "name": "Write Data to File",
+    "version": "1.0",
+    "description": "A Chrome extension that writes data to a file",
+    "manifest_version": 2,
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["contentscript.js"]
+      }
+    ],
+    "browser_action": {
+      "default_popup": "popup.html"
+    }
+  }

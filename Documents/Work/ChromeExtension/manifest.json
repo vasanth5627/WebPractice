@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "String to JSON",
+    "version": "1.0",
+    "description": "Create JSON file from string input",
+    "permissions": ["downloads", "activeTab","filesystem"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "String to JSON"
+    },
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["contentScript.js"]
+      }
+    ]
+  }
